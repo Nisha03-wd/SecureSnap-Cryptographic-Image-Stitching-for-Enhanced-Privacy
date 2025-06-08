@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>SecureSnap</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            scroll-behavior: smooth;
+        }
+        .hover-effect:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+      .typed-out {
+    overflow: hidden;
+    border-right: 0.15em solid blue;
+    white-space: nowrap;
+    animation: typing 1s steps(10, end) forwards, blinking 0.8s infinite;
+    font-size: 1.8rem;
+    width: 0;
+    display: inline-block;
+    position: relative;
+    z-index: 10; /* Ensure it's above other elements */
+}
+
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 22% }
+        }
+
+        @keyframes blinking {
+            from { border-color: transparent }
+            to { border-color: blue; }
+        }
+    </style>
+    
+</head>
+
+    <body class="bg-[#1E1B42] text-[#00FFAA] font-sans">
+        <section id="signup" class="h-screen flex flex-col justify-center items-center p-10">
+            <h3 class="text-3xl font-semibold text-center mb-4 text-white">SecureSnap Sign Up 🔐</h3>
+            <div class="p-5 bg-[#2C2A4A] shadow-md rounded-lg hover-effect w-3/4 max-w-md">
+                <h2 class="text-xl font-bold text-center text-white"></h2>
+                <form method="POST" action="/signup" class="mt-4">
+                    <label class="block text-white mb-1">Email:</label>
+                    <input type="email" name="email" placeholder="Enter your email" required
+                           class="block w-full p-2 border rounded-md bg-[#1E1B42] text-[#00FFAA] mb-4">
+                    <label class="block text-white mb-1">Password:</label>
+                    <input type="password" name="password" placeholder="Enter your password" required
+                           class="block w-full p-2 border rounded-md bg-[#1E1B42] text-[#00FFAA] mb-4">
+                    <button type="submit"
+                            class="bg-[#00FFAA] text-[#1E1B42] p-2 rounded-lg w-full hover:bg-[#00DD99]">
+                        Sign Up 🔓
+                    </button>
+                    <p class="mt-4 text-center text-white text-sm">
+                        Already have an account?
+                        <a href="/login" class="text-[#00FFAA] hover:underline">Log in</a>
+                    </p>
+                </form>
+            </div>
+        </section> 
+        
+    </body>
+</html>
