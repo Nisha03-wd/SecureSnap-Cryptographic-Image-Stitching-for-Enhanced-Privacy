@@ -1,2 +1,11 @@
-# SecureSnap-Cryptographic-Image-Stitching-for-Enhanced-Privacy
-Designed a secure image processing system that splits images into dynamic segments, encrypts them using AES, and securely transmits them for decryption and reconstruction using SIFT. Aimed to enhance digital security for high-sensitivity sectors like defense and corporate industries. (Python, AES Encryption, SIFT, Cryptography)
+**🔒 SecureSnap-Cryptographic-Image-Stitching-for-Enhanced-Privacy**
+
+Designed a secure image processing system that:
+- Splits images into dynamic segments  
+- Encrypts them using **AES encryption**  
+- Securely transmits them for decryption and reconstruction using **SIFT (Scale-Invariant Feature Transform)**  
+
+🎯 **Aim:** Enhance digital security for high-sensitivity sectors such as **defense and corporate industries**.  
+🛠 **Tech Stack:** Python, AES Encryption, SIFT, Cryptography  
+
+📖 Published in **Springer**.
